@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="clac2nd.css">
+    <title>電卓</title>
+  </head>
+  <body>
+    <table class="Calculator">
+      <tr>
+        <td colspan="4" id="result" value="0"></td>
+      </tr>
+
+      <tr>
+        <td><button class="Button" onclick="numClick(this)">7</button></td>
+        <td><button class="Button" onclick="numClick(this)">8</button></td>
+        <td><button class="Button" onclick="numClick(this)">9</button></td>
+        <td><button class="Button" onclick="opeClick(this)">+</button></td>
+      </tr>
+
+      <tr>
+        <td><button class="Button" onclick="numClick(this)">4</button></td>
+        <td><button class="Button" onclick="numClick(this)">5</button></td>
+        <td><button class="Button" onclick="numClick(this)">6</button></td>
+        <td><button class="Button" onclick="opeClick(this)">-</button></td>
+      </tr>  
+
+      <tr>
+        <td><button class="Button" onclick="numClick(this)">1</button></td>
+        <td><button class="Button" onclick="numClick(this)">2</button></td>
+        <td><button class="Button" onclick="numClick(this)">3</button></td>
+        <td><button class="Button" onclick="opeClick(this)">*</button></td>
+      </tr>
+
+      <tr>
+        <td><button class="Button" onclick="numClick(this)">0</button></td>
+        <td><button class="Button" onclick="numClick(this)">00</button></td>
+        <td><button class="Button" onclick="numClick(this)">.</button></td>
+        <td><button class="Button" onclick="opeClick(this)">/</button></td>
+      </tr>
+
+      <tr>
+        <td colspan="2"><button class="Button" onclick="numClick(this)">AC</button></td>
+        <td colspan="2"><button class="Button" onclick="numClick(this)">=</button></td>
+      </tr>
+    </table>
+    <script src="clac2nd.js"></script>  
+  </body>
+</html>
